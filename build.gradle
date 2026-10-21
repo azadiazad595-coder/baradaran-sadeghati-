@@ -1,3 +1,19 @@
-plugins {
-    id 'com.android.application' version '8.7.3' apply false
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'ir.sadeghati.business'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'ir.sadeghati.business'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    buildTypes {
+        debug { applicationIdSuffix '.debug' }
+        release { minifyEnabled false }
+    }
 }
